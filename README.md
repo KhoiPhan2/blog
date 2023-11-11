@@ -1,4 +1,5 @@
-### Hi there 👋
+### Hello, I am Khoi Phan, I am currently an ECE student at The University of Washington, I am passionate about Machine learning, Programming and all things EE! 
+### Thanks for checking out my GitHub!
 
 <!--
 **KhoiPhan2/KhoiPhan2** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
