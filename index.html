@@ -11,10 +11,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: #f4f4f4;
         }
 
         header {
-            background-color: #333;
+            background: linear-gradient(to right, #333, #555);
             color: #fff;
             text-align: center;
             padding: 1em;
@@ -36,18 +37,18 @@
             margin-right: 10px;
         }
 
-        section {
-            padding: 20px;
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        section {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
 
         .project-section {
@@ -55,7 +56,33 @@
         }
 
         .project-link {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .project-link h3 {
+            color: #333;
+        }
+
+        .project-link p {
+            color: #555;
+        }
+
+        .project-link a {
+            color: #007bff;
+        }
+
+        footer {
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
