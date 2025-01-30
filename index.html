@@ -1,157 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khoi Phan's Portfolio</title>
+    <title>My Blog</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             background-color: #f4f4f4;
         }
-
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
         header {
-            background: linear-gradient(to right, #333, #555);
+            background: #333;
             color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
-
-        nav {
-            background-color: #eee;
-            padding: 1em;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        section {
             padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        .project-section {
-            margin-top: 20px;
-        }
-
-        .project-link {
-            margin-bottom: 20px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-        }
-
-        .project-link h3 {
-            color: #333;
-        }
-
-        .project-link p {
-            color: #555;
-        }
-
-        .project-link a {
-            color: #007bff;
-        }
-
-        footer {
-            background: linear-gradient(to right, #333, #555);
-            color: #fff;
             text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        }
+        .blog-post {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post h2 {
+            color: #333;
         }
     </style>
 </head>
-
 <body>
     <header>
-        <h1>Khoi Phan's Portfolio</h1>
+        <h1>Welcome to My Blog</h1>
     </header>
-
-
-    
-    <section>
-        <h2>About Me</h2>
-        <p>
-            My name is Khoi Phan, and I am majoring in Electrical and Computer Engineering.
-            I have a strong interest in Machine Learning and Programming, as well as Circuits and Circuit Design.
-            Here are some details about my relevant coursework:
-        </p>
-        <ul>
-            <li>Fundamentals in Electrical Engineering</li>
-            <li>Data Structures and Algorithms</li>
-            <li>Applied Linear Algebra and Numerical Analysis</li>
-            <li>Digital Circuits and Systems</li>
-            <li>Programming for Signal and Information Processing Applications</li>
-            <li>Intermediate Programming Concepts and Tools</li>
-            <li>Introduction to Computer Science 100 Series</li>
-        </ul>
-        <p>Visit my <a href="https://www.linkedin.com/in/khoi-phan-03a978186/" target="_blank">LinkedIn</a> to learn more about me!</p>
-    </section>
-
-    <section class="project-section">
-        <h2>Projects</h2>
-        <div class="project-link">
-            <h3>Project 1: Linear Regression Model vs Decision Tree Model on Gas Prices over time dataset</h3>
-            <p>This is my personal project that I did that compared the differences between the Linear Regression Model and the Decision Tree Model. Both of these</p>
-            <p>models were trained on 80% of a dataset that was comprised of Gas Prices since January 1997. I also experimented with sizes of the DataSets and how it</p>
-            <p>would effect the accuracy of both of my models with the daily chart being more accurate than the monthly. Accuracy was determined using Mean Absolute Value</p>
-
-            <p>GitHub Link: <a href="https://github.com/KhoiPhan2/KhoiPhan2/blob/acd0b852e67db23052d57d2e961b7222b9f0be8c/Linear%20Regression%20Vs%20Decision%20Tree/Linear%20Regression%20Vs%20DecisionTree.pdf" target="_blank">Project 1 on GitHub</a></p>
+    <div class="container">
+        <div class="blog-post">
+            <h2>Featured Post</h2>
+            <p>This is a featured post on my blog. Stay tuned for more updates!</p>
         </div>
-
-        <div class="project-link">
-            <h3>Project 2: Implementation of Tug of War on FPGA Board with win Counter</h3>
-            <p>This project was a project that was done for a lab in my digital circuits and digital logic class.</p>
-            <p>A simple tug of war game was implemented using SystemVerilog as well as LSFR to simulate a computer player, </p>
-            <p>a simple win counter was also implemented which used flip flops as a basic memory unit to store the wins each player had.</p>
-            <p>Link to implementation: <a href="https://drive.google.com/file/d/1cpt3syZPibStO7dQFNx-Ms8NYXuV8GEM/view?usp=sharing" target="_blank">Project 2</a></p>
+        <div class="blog-post">
+            <h2>Blog Post Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-
-        <div class="project-link">
-            <h3>Project 3: Data Analysis on Real DataSets.</h3>
-            <p>This project was done for Python course that covers all of the functions of numpy, as well as employs the use of pandas.</p>
-            <p>This project best shows my ability in data science and how to manipulate datasets within python to achieve a result.</p>
-            <p>Overall I enjoyed this course becase I was able to explore Data Science more throughly through these problems.</p>
-            <p>GitHub Link: <a href="https://github.com/KhoiPhan2/KhoiPhan2/blob/Projects-By-Me!/Data%20analysis%20on%20CSV%20files%20using%20real%20data%20sets.pdf" target="_blank">Project 3 on GitHub</a></p>
+        <div class="blog-post">
+            <h2>Another Blog Post</h2>
+            <p>Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
         </div>
-
-        <div class="project-link">
-            <h3>Project 4: Disaster Relief</h3>
-            <p>This project simulates a city disaster resource allocation program.</p>
-            <p>It algorithmicallycompares allocation classes to eachother in order to find the allocation needing resources the most.</p>
-            <p>This project shows my proficiency in Java and Object Orientated Programming.</p>
-            <p>GitHub Link: <a href="https://github.com/KhoiPhan2/KhoiPhan2/blob/Projects-By-Me!/Disaster%20Relief.zip" target="_blank">Project 3 on GitHub</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Khoi Phan's Portfolio. All rights reserved.</p>
-    </footer>
+    </div>
 </body>
-
 </html>
