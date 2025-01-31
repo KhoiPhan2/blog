@@ -67,6 +67,34 @@
             font-size: 0.9em;
             margin: 5px 0 15px;
         }
+        /* Add scroll-to-top button styles */
+        #scrollToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            transition: opacity 0.3s;
+            font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+        }
+
+        #scrollToTop:hover {
+            background: #444;
+        }
+
+        #scrollToTop::after {
+            content: '↑';
+            display: block;
+            margin-top: -2px;
+        }
     </style>
 </head>
 <body>
@@ -190,6 +218,30 @@
             dateElement.classList.add('post-date');
         });
     </script>
+      <button id="scrollToTop" title="Go to top" aria-label="Scroll to top"></button>
+
+    <script>
+        // Scroll to top functionality
+        const scrollButton = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollButton.style.display = 'block';
+                scrollButton.style.opacity = '1';
+            } else {
+                scrollButton.style.opacity = '0';
+                setTimeout(() => {
+                    scrollButton.style.display = 'none';
+                }, 300);
+            }
+        });
+
+        scrollButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
-
